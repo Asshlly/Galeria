@@ -1,0 +1,55 @@
+@primary-bg-color: #40024d;
+@primary-tx-color: #fff;
+@secondary-bg-color: #fff;
+@secondary-tx-color: #1a1d1b;
+
+@primary-shadow: #000;
+
+@display_breaks : {
+    md: 720px;
+    lg: 1025px;
+    xlg: 1201px;
+}
+
+
+@import "headers.less";
+@import "gallery.less";
+@import "footer.less";
+
+.gallery {
+    max-width: 85%;
+    margin: 20px auto;
+    .title {
+        font-size: 25px;
+        background-color: @primary-bg-color;
+        color: @primary-tx-color;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 15px;
+      }
+      .image-gallery {
+        columns: 3 250px;
+        gap: 15px;
+
+        img {
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 100%;
+            filter: grayscale(70%);
+            transition: filter 0.3s, transform 0.3s;
+          }
+          img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+          }
+      }
+  }
+  
+  
+  
+  
+  
+ 
+
+  

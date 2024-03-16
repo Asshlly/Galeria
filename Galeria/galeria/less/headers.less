@@ -1,0 +1,83 @@
+@primary-bg-color: #40024d;
+@primary-tx-color: #fff;
+@secondary-bg-color: #fff;
+@secondary-tx-color: #1a1d1b;
+@primary-bghover-color: #c645ca;
+@secondary-bghover-color: #4b4b4b;
+
+@primary-shadow: #000;
+
+@display_breaks : {
+    md: 720px;
+    lg: 1025px;
+    xlg: 1201px;
+}
+@import "headers.less";
+@import "gallery.less";
+@import "footer.less";
+ 
+ 
+ /* header */
+ header {
+    width: 100%;
+    height: 60px;/*Editalo*/
+    line-height: 60px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color:@secondary-bg-color ;
+    
+  }
+  
+  /* Navigation */
+  .menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+    ul {
+        width: 100%;
+        height: inherit;
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+        li {
+            width: 20%;
+            height: inherit;
+            display: inline-block;
+
+            a{
+                color: #000;
+              }
+          }
+      }
+  }
+  
+  
+
+  
+  .menu ul li:hover {
+    background-color: @primary-bghover-color;
+    color: @secondary-bghover-color;
+    border-radius: 15px;
+    transition: all 1s;
+  }
+  
+  #menuToggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    img {
+        width: 30px;
+      }
+  }
